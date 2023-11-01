@@ -1,0 +1,12 @@
+C:\Users\User\source\repos\carShopMVC\CarWorkshopMVC.Domain\bin\Debug\net7.0\CarWorkshopMVC.Domain.deps.json
+C:\Users\User\source\repos\carShopMVC\CarWorkshopMVC.Domain\bin\Debug\net7.0\CarWorkshopMVC.Domain.dll
+C:\Users\User\source\repos\carShopMVC\CarWorkshopMVC.Domain\bin\Debug\net7.0\CarWorkshopMVC.Domain.pdb
+C:\Users\User\source\repos\carShopMVC\CarWorkshopMVC.Domain\obj\Debug\net7.0\CarWorkshopMVC.Domain.csproj.AssemblyReference.cache
+C:\Users\User\source\repos\carShopMVC\CarWorkshopMVC.Domain\obj\Debug\net7.0\CarWorkshopMVC.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\User\source\repos\carShopMVC\CarWorkshopMVC.Domain\obj\Debug\net7.0\CarWorkshopMVC.Domain.AssemblyInfoInputs.cache
+C:\Users\User\source\repos\carShopMVC\CarWorkshopMVC.Domain\obj\Debug\net7.0\CarWorkshopMVC.Domain.AssemblyInfo.cs
+C:\Users\User\source\repos\carShopMVC\CarWorkshopMVC.Domain\obj\Debug\net7.0\CarWorkshopMVC.Domain.csproj.CoreCompileInputs.cache
+C:\Users\User\source\repos\carShopMVC\CarWorkshopMVC.Domain\obj\Debug\net7.0\CarWorkshopMVC.Domain.dll
+C:\Users\User\source\repos\carShopMVC\CarWorkshopMVC.Domain\obj\Debug\net7.0\refint\CarWorkshopMVC.Domain.dll
+C:\Users\User\source\repos\carShopMVC\CarWorkshopMVC.Domain\obj\Debug\net7.0\CarWorkshopMVC.Domain.pdb
+C:\Users\User\source\repos\carShopMVC\CarWorkshopMVC.Domain\obj\Debug\net7.0\ref\CarWorkshopMVC.Domain.dll

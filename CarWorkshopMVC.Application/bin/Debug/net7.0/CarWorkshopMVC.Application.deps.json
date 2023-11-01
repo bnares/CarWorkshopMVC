@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v7.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v7.0": {
+      "CarWorkshopMVC.Application/1.0.0": {
+        "dependencies": {
+          "CarWorkshopMVC.Domain": "1.0.0"
+        },
+        "runtime": {
+          "CarWorkshopMVC.Application.dll": {}
+        }
+      },
+      "CarWorkshopMVC.Domain/1.0.0": {
+        "runtime": {
+          "CarWorkshopMVC.Domain.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "CarWorkshopMVC.Application/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "CarWorkshopMVC.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

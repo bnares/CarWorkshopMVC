@@ -1,0 +1,33 @@
+﻿@model List<CarWorkshop.MVC.Models.Person>
+@{
+    ViewData["Title"] = "Privacy Policy";
+    var currentYear = DateTime.Now.Year;
+    var dayOfWeek = DateTime.Now.DayOfWeek;
+    var email = "piotr.ostoruch@gmail.com";
+}
+<h1>@ViewData["Title"]</h1>
+
+<p>Use this page to detail your site's privacy policy.</p>
+
+
+<p>@currentYear</p>
+@if(dayOfWeek == DayOfWeek.Sunday || dayOfWeek == DayOfWeek.Saturday){
+    <p>It's weekend'</p>
+}else{
+    <p>Not yet the weekend :(</p>
+}
+
+@switch(dayOfWeek){
+    case DayOfWeek.Monday:
+        <p>It is monday</p>
+        break;
+    default:
+        <p>It is not monday</p>
+        break;
+}
+
+
+<a href="mailto:@email">@email</a>
+@foreach(var person in @Model){
+    <p>@person.FirstName | @person.LastName</p>
+}
