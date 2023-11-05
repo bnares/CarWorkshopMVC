@@ -1,9 +1,12 @@
+using CarWorkshopMVC.Application.Extensions;
+using CarWorkshopMVC.Application.Services;
 using CarWorkshopMVC.Infrastructure.Extensions;
 using CarWorkshopMVC.Infrastructure.Persistance;
 using CarWorkshopMVC.Infrastructure.Seeders;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
+builder.Services.AddScoped<ICarWorkshopService, CarWorkshopService>();
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
@@ -13,6 +16,7 @@ builder.Services.AddInfrastructure(builder.Configuration);
 
 //builder.Services.AddDbContext<CarWorkshopDbContext>(options => options.UseSqlServer(
 //    builder.Configuration.GetConnectionString("CarWorkshop")));
+builder.Services.AddApplication();
 
 var app = builder.Build();
 var scope = app.Services.CreateScope();
@@ -36,5 +40,5 @@ app.UseAuthorization();
 app.MapControllerRoute(
     name: "default",
     pattern: "{controller=Home}/{action=Index}/{id?}");
-
+app.MapRazorPages();
 app.Run();

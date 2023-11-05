@@ -1,4 +1,5 @@
 ﻿using CarWorkshopMVC.Domain.Entities;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
@@ -8,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace CarWorkshopMVC.Infrastructure.Persistance
 {
-    public class CarWorkshopDbContext : DbContext
+    public class CarWorkshopDbContext : IdentityDbContext
     {
         public CarWorkshopDbContext(DbContextOptions<CarWorkshopDbContext> options) : base(options)
         {
@@ -23,6 +24,7 @@ namespace CarWorkshopMVC.Infrastructure.Persistance
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
+            base.OnModelCreating(modelBuilder);
             modelBuilder.Entity<CarWorkshop>()
                 .OwnsOne(c => c.ContactDetails);
         }
