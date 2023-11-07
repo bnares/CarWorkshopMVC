@@ -1,4 +1,5 @@
-﻿@model CarWorkshopMVC.Application.CarWorkshop.CarWorkshopDTO
+﻿@using CarWorkshopMVC.Application.CarWorkshopService.Commands
+@model CarWorkshopMVC.Application.CarWorkshop.CarWorkshopDTO
 
 @{
     ViewData["Title"] = "Details";
@@ -51,6 +52,17 @@
     </dl>
 </div>
 <div>
-    @Html.ActionLink("Edit", "Edit", new { /* id = Model.PrimaryKey */ }) |
+    @if (Model.IsEditable)
+    {
+        @Html.ActionLink("Edit", "Edit", new { /* id = Model.PrimaryKey */ });
+ 
+    }
+    <partial name="_CreateCarWorkshopService" model="new CreateCarWorkshopServiceCommand(){CarWorkshopEncodedName=Model.EncodedName}" />
     <a asp-action="Index">Back to List</a>
 </div>
+
+@section Scripts{
+    <script src="~/js/CarWorkshop/Edit.js"></script>
+}
+
+<!-- Button trigger modal -->

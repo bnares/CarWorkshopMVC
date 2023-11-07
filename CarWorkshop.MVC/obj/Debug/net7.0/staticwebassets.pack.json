@@ -13,6 +13,10 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "C:\\Users\\User\\source\\repos\\carShopMVC\\CarWorkshop.MVC\\wwwroot\\js\\CarWorkshop\\Edit.js",
+      "PackagePath": "staticwebassets\\js\\CarWorkshop\\Edit.js"
+    },
+    {
       "Id": "C:\\Users\\User\\source\\repos\\carShopMVC\\CarWorkshop.MVC\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },
@@ -243,6 +247,22 @@
     {
       "Id": "C:\\Users\\User\\source\\repos\\carShopMVC\\CarWorkshop.MVC\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\carShopMVC\\CarWorkshop.MVC\\wwwroot\\lib\\toastr.js\\toastr.css",
+      "PackagePath": "staticwebassets\\lib\\toastr.js\\toastr.css"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\carShopMVC\\CarWorkshop.MVC\\wwwroot\\lib\\toastr.js\\toastr.js.map",
+      "PackagePath": "staticwebassets\\lib\\toastr.js\\toastr.js.map"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\carShopMVC\\CarWorkshop.MVC\\wwwroot\\lib\\toastr.js\\toastr.min.css",
+      "PackagePath": "staticwebassets\\lib\\toastr.js\\toastr.min.css"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\carShopMVC\\CarWorkshop.MVC\\wwwroot\\lib\\toastr.js\\toastr.min.js",
+      "PackagePath": "staticwebassets\\lib\\toastr.js\\toastr.min.js"
     },
     {
       "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.CarWorkshop.MVC.Microsoft.AspNetCore.StaticWebAssets.props",

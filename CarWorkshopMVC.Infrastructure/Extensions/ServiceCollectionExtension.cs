@@ -20,10 +20,15 @@ namespace CarWorkshopMVC.Infrastructure.Extensions
         {
             services.AddDbContext<CarWorkshopDbContext>(options => options.UseSqlServer(
                 configuration.GetConnectionString("CarWorkshop")));
-            services.AddDefaultIdentity<IdentityUser>()
-                .AddEntityFrameworkStores<CarWorkshopDbContext>();
+            //services.AddDefaultIdentity<IdentityUser>()
+            //    .AddEntityFrameworkStores<CarWorkshopDbContext>();
             services.AddScoped<CarWorkshopSeeder>();
             services.AddScoped<ICarWorkshopRepository, CarWorkshopRepository>();
+            services.AddDefaultIdentity<IdentityUser>(options => {
+                options.Stores.MaxLengthForKeys = 450;
+            }).AddRoles<IdentityRole>()
+            .AddEntityFrameworkStores<CarWorkshopDbContext>();
+           services.AddScoped<ICarWorkshopServiceRepository, CarWorkshopServiceRepository>();
         }
     }
 }

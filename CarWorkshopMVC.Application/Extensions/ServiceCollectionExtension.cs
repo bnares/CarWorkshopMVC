@@ -1,4 +1,6 @@
-﻿using CarWorkshopMVC.Application.Commands.CreateCarWorksop;
+﻿using AutoMapper;
+using CarWorkshopMVC.Application.ApplicationUser;
+using CarWorkshopMVC.Application.Commands.CreateCarWorksop;
 using CarWorkshopMVC.Application.Mapping;
 using CarWorkshopMVC.Application.Services;
 using FluentValidation;
@@ -16,14 +18,26 @@ namespace CarWorkshopMVC.Application.Extensions
     {
         public static void AddApplication(this IServiceCollection services)
         {
-            services.AddScoped<ICarWorkshopService, CarWorkshopService>();
-            services.AddAutoMapper(typeof(CarWorkshopMappingProfile));
+            services.AddScoped<ICarWorkshopService, CarWorkshopMVC.Application.Services.CarWorkshopService>();
+            //services.AddAutoMapper(typeof(CarWorkshopMappingProfile));
+            //services.AddScoped(provider => new MapperConfiguration(cfg =>
+            //{
+            //    var scope = provider.CreateScope();
+            //    var userContext = scope.ServiceProvider.GetRequiredService<IUserContext>();
+            //    cfg.AddProfile(new CarWorkshopMappingProfile(userContext));
+            //}));
+            services.AddScoped(provider => new MapperConfiguration(cfg =>
+            {
+                var scope = provider.CreateScope();
+                var userContext = scope.ServiceProvider.GetRequiredService<IUserContext>();
+                cfg.AddProfile(new CarWorkshopMappingProfile(userContext));
+            }).CreateMapper());
             services.AddValidatorsFromAssemblyContaining<CreateCarWorkshopCommandValidator>()
                 .AddFluentValidationAutoValidation()
                 .AddFluentValidationClientsideAdapters();
             
             services.AddMediatR(cfg => cfg.RegisterServicesFromAssemblyContaining(typeof(CreateCarWorkshopCommand)));
-
+            services.AddScoped<IUserContext, UserContext>();
         }
     }
 }
