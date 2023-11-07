@@ -25,5 +25,10 @@ namespace CarWorkshopMVC.Infrastructure.Repositories
             _context.Services.Add(carWorkshopService);
             await _context.SaveChangesAsync();
         }
+
+        public async Task<IEnumerable<CarWorkshopService>> GetAllByEncodedName(string encodedName)
+        {
+          return await _context.Services.Where(s=>s.CarWorkshop.EncodedName == encodedName).ToListAsync();
+        }
     }
 }

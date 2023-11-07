@@ -5,11 +5,17 @@ VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CarWorkshop.MVC", "CarWorkshop.MVC\CarWorkshop.MVC.csproj", "{0775063A-6E8D-4592-BB95-F8175A49F25A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CarWorkshopMVC.Domain", "CarWorkshopMVC.Domain\CarWorkshopMVC.Domain.csproj", "{216C11B4-ABFE-4226-8A0F-52FB405C8E1A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CarWorkshopMVC.Domain", "CarWorkshopMVC.Domain\CarWorkshopMVC.Domain.csproj", "{216C11B4-ABFE-4226-8A0F-52FB405C8E1A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CarWorkshopMVC.Application", "CarWorkshopMVC.Application\CarWorkshopMVC.Application.csproj", "{5A1E5B7E-F4AB-4DE2-ACA9-B438BEBFB485}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CarWorkshopMVC.Application", "CarWorkshopMVC.Application\CarWorkshopMVC.Application.csproj", "{5A1E5B7E-F4AB-4DE2-ACA9-B438BEBFB485}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CarWorkshopMVC.Infrastructure", "CarWorkshopMVC.Infrastructure\CarWorkshopMVC.Infrastructure.csproj", "{31D15B7A-2B4B-4463-9184-809237AF218B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CarWorkshopMVC.Infrastructure", "CarWorkshopMVC.Infrastructure\CarWorkshopMVC.Infrastructure.csproj", "{31D15B7A-2B4B-4463-9184-809237AF218B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CarWorkshopMVC.DomainTests", "CarWorkshopMVC.DomainTests\CarWorkshopMVC.DomainTests.csproj", "{693BF125-4DC1-404D-9403-E2B880F4FA25}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CarWorkshopMVC.ApplicationTests", "CarWorkshopMVC.ApplicationTests\CarWorkshopMVC.ApplicationTests.csproj", "{1A4056E8-FDB8-4E00-919E-303C89D530B8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{0C8BE439-1639-48A1-836C-A8D11A8ECEA7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,9 +39,21 @@ Global
 		{31D15B7A-2B4B-4463-9184-809237AF218B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{31D15B7A-2B4B-4463-9184-809237AF218B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{31D15B7A-2B4B-4463-9184-809237AF218B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{693BF125-4DC1-404D-9403-E2B880F4FA25}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{693BF125-4DC1-404D-9403-E2B880F4FA25}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{693BF125-4DC1-404D-9403-E2B880F4FA25}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{693BF125-4DC1-404D-9403-E2B880F4FA25}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1A4056E8-FDB8-4E00-919E-303C89D530B8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1A4056E8-FDB8-4E00-919E-303C89D530B8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1A4056E8-FDB8-4E00-919E-303C89D530B8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1A4056E8-FDB8-4E00-919E-303C89D530B8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{693BF125-4DC1-404D-9403-E2B880F4FA25} = {0C8BE439-1639-48A1-836C-A8D11A8ECEA7}
+		{1A4056E8-FDB8-4E00-919E-303C89D530B8} = {0C8BE439-1639-48A1-836C-A8D11A8ECEA7}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {565090CB-629C-48E8-A412-B45AEA632E1B}
